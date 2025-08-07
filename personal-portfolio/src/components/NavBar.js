@@ -37,7 +37,7 @@ export const NavBar = () => {
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
-            <img src={logo} alt="Logo" style={{height:"50px",width: "auto"}}/>
+            <img src={logo} alt="Logo" style={{height:"80px",width: "auto", backgroundColor:"none"}}/>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
@@ -47,6 +47,7 @@ export const NavBar = () => {
               <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
               <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
               <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+              <Nav.Link href="#experience" className={activeLink === 'experience' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('experience')}>Experience</Nav.Link>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
@@ -55,7 +56,7 @@ export const NavBar = () => {
                 <a href="https://leetcode.com/u/ashutoshmishra0001/"><img src={navIcon3} alt=""  /></a>
               </div>
               <HashLink to='#connect'>
-                <button className="vvd"><span>Let’s Connect</span></button>
+                <button className="vvd" ><span>Let’s Connect</span></button>
               </HashLink>
             </span>
           </Navbar.Collapse>

@@ -65,18 +65,18 @@ export const Projects = () => {
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                      <Nav.Link eventKey="first">Projects</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                      <Nav.Link eventKey="second">Résumé</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                      <Nav.Link eventKey="third">Certificates</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
-                      <h4>Projects</h4>
+                      
                       <br></br>
                       <Row>
                         {
@@ -91,8 +91,8 @@ export const Projects = () => {
                         }
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="second">
-                        <h4>Certificates</h4>
+                    <Tab.Pane eventKey="third">
+                        
                         <br></br>
                       <Row>
                         {
@@ -107,8 +107,8 @@ export const Projects = () => {
                         }
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                        <h4>Résumé</h4>
+                    <Tab.Pane eventKey="second">
+                        
                         <br></br>
                           
                        <h5><a href={resumeAshu}  className="btn btn-outline-light resume-btn" >Download Resume</a></h5>

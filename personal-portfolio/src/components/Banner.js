@@ -5,7 +5,6 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
-
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -76,16 +75,26 @@ export const Banner = () => {
                     </span>
                   </h1>
                   <p>
-                    I'm a full-stack web developer skilled in React, Node.js,
-                    Express, and MongoDB. I build responsive, scalable, and
-                    user-focused web applications. With a passion for clean
-                    architecture and intuitive design, I turn ideas into
-                    powerful digital solutions.
+                    I'm a passionate B.Tech Computer Science and Engineering
+                    student specializing in Internet of Things (IoT) at KCC
+                    Institute of Technology and Management, Greater Noida. With
+                    a strong foundation in full-stack development and hands-on
+                    experience from multiple internships, I'm dedicated to
+                    creating innovative solutions that bridge the gap between
+                    technology and real-world applications. My journey in
+                    technology has been marked by consistent academic
+                    excellence, achieving 90.8% in intermediate and 91.67% in
+                    high school. I've gained practical experience through
+                    internships at leading tech companies, where I've worked on
+                    projects ranging from Android development to full-stack web
+                    applications. Currently pursuing additional certifications
+                    in Data Structures and Algorithms with Java from Apna
+                    College, I'm committed to continuous learning and staying
+                    updated with the latest technological trends.
                   </p>
                   <button onClick={() => console.log("connect")}>
                     Let’s Connect <ArrowRightCircle size={25} />
                   </button>
-
                 </div>
               )}
             </TrackVisibility>

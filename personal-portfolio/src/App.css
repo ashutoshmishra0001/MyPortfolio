@@ -342,7 +342,31 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 40%;
   z-index: -4;
 }
+.skill-card {
+  background: linear-gradient(135deg, #a855f7, #6366f1);
+  color: #fff;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0 auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
 
+.skill-card:hover {
+  transform: scale(1.05);
+}
+
+/* Add padding inside the carousel container to create spacing between cards */
+.skill-slider .item {
+  padding: 20px;
+}
 /************ Projects Css ************/
 .project {
   padding: 80px 0;
@@ -613,6 +637,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .contact-info-bx {
+  
   background: #ffffff;
   border-radius: 55px;
   color: #121212;
@@ -688,4 +713,116 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+
+/* Experience Section */
+/* SECTION BACKGROUND */
+.experience-section {
+  background: url('./assets/img/color-sharp.png') no-repeat center center/cover;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* WHITE CONTAINER */
+.experience-container {
+  background: white;
+  border-radius: 60px;
+  padding: 50px 40px;
+  width: 100%;
+  max-width: 1200px;
+  
+}
+
+/* TITLE */
+.experience-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #111;
+}
+
+/* TIMELINE BASE */
+.experience-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+}
+
+/* LINE */
+.experience-timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #df66ea;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+/* EACH ITEM */
+.timeline-item {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-item.right {
+  justify-content: flex-start;
+}
+
+/* CARD STYLING */
+.timeline-card {
+  background: #fff;
+  border-radius: 30px;
+  padding: 20px 25px;
+  max-width: 400px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-date {
+  color: #4d0146;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.timeline-role {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.timeline-company {
+  font-style: italic;
+  color: #e30fe3;
+  font-size: 0.95rem;
+}
+.timeline-description {
+  font-style: italic;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+  .experience-timeline::before {
+    left: 10px;
+  }
+
+  .timeline-item,
+  .timeline-item.right {
+    justify-content: flex-start;
+  }
+
+  .timeline-card {
+    margin-left: 30px;
+  }
 }
